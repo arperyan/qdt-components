@@ -52800,8 +52800,6 @@ function (_React$Component) {
                 brush = box.brush, noInteractionBox = objectWithoutProperties_default()(box, ["brush"]);
 
                 _this.settings.components.push(noInteractionBox);
-
-                console.log(tempSettings, _this.settings);
               }
 
               _this.pic = picasso_esm({

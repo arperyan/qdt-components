@@ -93,7 +93,6 @@ class QdtPicassoMiniMapComponent extends React.Component {
       const { components: [,,, box] } = tempSettings;
       const { brush, ...noInteractionBox } = box;
       this.settings.components.push(noInteractionBox);
-      console.log(tempSettings, this.settings);
     }
     this.pic = picasso({ renderer: { prio: ['canvas'] } }).chart({
       element: this.element,
