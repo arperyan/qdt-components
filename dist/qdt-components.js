@@ -52796,10 +52796,12 @@ function (_React$Component) {
               });
 
               if (type === 'horizontalBarchart' || type === 'verticalBarchart') {
-                _tempSettings$compone = slicedToArray_default()(tempSettings.components, 3), box = _tempSettings$compone[2];
+                _tempSettings$compone = slicedToArray_default()(tempSettings.components, 4), box = _tempSettings$compone[3];
                 brush = box.brush, noInteractionBox = objectWithoutProperties_default()(box, ["brush"]);
 
                 _this.settings.components.push(noInteractionBox);
+
+                console.log(tempSettings, _this.settings);
               }
 
               _this.pic = picasso_esm({

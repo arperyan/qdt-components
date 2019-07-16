@@ -90,9 +90,10 @@ class QdtPicassoMiniMapComponent extends React.Component {
     };
     const data = { ...qLayout, qHyperCube: { ...qLayout.qHyperCube, qDataPages: [qRData] } };
     if (type === 'horizontalBarchart' || type === 'verticalBarchart') {
-      const { components: [,, box] } = tempSettings;
+      const { components: [,,, box] } = tempSettings;
       const { brush, ...noInteractionBox } = box;
       this.settings.components.push(noInteractionBox);
+      console.log(tempSettings, this.settings);
     }
     this.pic = picasso({ renderer: { prio: ['canvas'] } }).chart({
       element: this.element,
