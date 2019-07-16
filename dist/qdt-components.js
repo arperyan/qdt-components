@@ -52877,7 +52877,10 @@ function (_React$Component) {
           width: outerWidth,
           height: '50px',
           overflow: 'auto',
-          paddingRight: 10
+          paddingRight: 10,
+          paddingLeft: 0,
+          paddingTop: 1,
+          paddingBottom: 0
         }
       }, react_default.a.createElement("div", {
         ref: function ref(node) {
@@ -52887,15 +52890,15 @@ function (_React$Component) {
           backgroundColor: '#EFEFEF',
           padding: 3,
           width: innerWidth,
-          height: height,
+          height: height - 2,
           maxWidth: '100%',
-          maxHeight: height,
+          maxHeight: height - 2,
           cursor: 'pointer'
         }
       }), react_default.a.createElement("div", {
         style: {
           border: '1px solid rgba(89, 89, 89, 0.4)',
-          backgroundColor: 'rgba(0,0,0,0.1)',
+          backgroundColor: 'rgba(0, 0, 0, 0.1)',
           position: 'absolute',
           top: 0,
           left: left,

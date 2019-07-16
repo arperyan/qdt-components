@@ -113,7 +113,14 @@ class QdtPicassoMiniMapComponent extends React.Component {
     return (
       <div ref={node => this.root = node} style={{ position: 'relative' }}>
         <div style={{
-          position: 'relative', width: outerWidth, height: '50px', overflow: 'auto', paddingRight: 10,
+          position: 'relative',
+          width: outerWidth,
+          height: '50px',
+          overflow: 'auto',
+          paddingRight: 10,
+          paddingLeft: 0,
+          paddingTop: 1,
+          paddingBottom: 0,
         }}
         >
           <div
@@ -122,16 +129,16 @@ class QdtPicassoMiniMapComponent extends React.Component {
               backgroundColor: '#EFEFEF',
               padding: 3,
               width: innerWidth,
-              height,
+              height: height - 2,
               maxWidth: '100%',
-              maxHeight: height,
+              maxHeight: height - 2,
               cursor: 'pointer',
             }}
           />
           <div
             style={{
               border: '1px solid rgba(89, 89, 89, 0.4)',
-              backgroundColor: 'rgba(0,0,0,0.1)',
+              backgroundColor: 'rgba(0, 0, 0, 0.1)',
               position: 'absolute',
               top: 0,
               left,
